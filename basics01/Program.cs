@@ -114,6 +114,17 @@ namespace basics01
             #endregion
 
 
+            #region Given int pages = 464;, convert it into a string using ToString() and print its type using GetType() to prove it's now a string.
+
+            int pagess = 464;
+            // Convert it into a string using ToString()
+            string pagesStr = pagess.ToString();
+            // Print its type using GetType()
+            Console.WriteLine(pagesStr.GetType());
+
+            #endregion
+
+
 
 
 
