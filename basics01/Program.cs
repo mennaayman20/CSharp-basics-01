@@ -126,6 +126,21 @@ namespace basics01
 
 
 
+            #region Declare int copies = 100;. Box it into an object variable, then unbox it back into a new int variable, and print both.
+            
+            int copies = 100;
+            //  Boxing: Convert int (Value Type) to object (Reference Type)
+            object boxedCopies = copies;
+            //  Unboxing: Convert object back to int using explicit cast
+            int unboxedCopies = (int)boxedCopies;
+            // Print both variables
+            Console.WriteLine($"Boxed Object: {boxedCopies}");
+            Console.WriteLine($"Unboxed Int: {unboxedCopies}");
+
+            #endregion
+
+
+
 
 
 
