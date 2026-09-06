@@ -1,4 +1,7 @@
-﻿namespace basics01
+﻿using System.Drawing;
+using System.Runtime.Intrinsics.X86;
+
+namespace basics01
 {
     internal class Program
     {
@@ -85,8 +88,30 @@
             // print
             Console.WriteLine(pagesInt);
 
-            #endregion 
+            #endregion
 
+
+            #region Given string yearText = "2023";, convert it using int.Parse(). Then given string badText = "abc";, use int.TryParse() to safely try converting it, and print "Invalid number" if it fails.
+            
+            // Convert using int.Parse()
+            string yearText = "2023";
+            int year = int.Parse(yearText);
+            Console.WriteLine($"Year: {year}");
+
+            // try converting badText using int.TryParse()
+            string badText = "abc";
+
+            bool isSuccess = int.TryParse(badText, out int resultt);
+
+            if (isSuccess)
+            {
+                Console.WriteLine($"Converted number: {resultt}");
+            }
+            else
+            {
+                Console.WriteLine("Invalid number");
+            }
+            #endregion
 
 
 
