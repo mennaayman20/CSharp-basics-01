@@ -4,8 +4,10 @@
     {
         static void Main(string[] args)
         {
-            #region Q1
-             // Create an instance of the Book class 
+
+
+            #region Create a Book class with a Title (string) and Pages (int). Create a Book object and store it in a variable of type object.Print it.
+            // Create an instance of the Book class 
             Book myBook = new Book();
             myBook.Title = "the Great Gatsby";
             myBook.Pages = 200;
@@ -16,14 +18,35 @@
             #endregion
 
 
-            #region Q2
+
+            #region Using the Book class above, print the result of calling ToString(), Equals() (compare book with itself), GetHashCode(), and GetType() on book. 
             Console.WriteLine(objBook.ToString());             
             Console.WriteLine(objBook.Equals(objBook));       
             Console.WriteLine(objBook.GetHashCode());          
             Console.WriteLine(objBook.GetType());
             #endregion
 
-            
+
+
+            #region Write code that divides 10 by 0 inside a try block, catches the exception, prints "Cannot divide by zero", and then prints "Done" in a finally block.
+            try
+            {
+                int number1 = 10;
+                int number2 = 0;
+                int result = number1 / number2;
+            }
+            catch(Exception)
+            {
+                Console.WriteLine("Cannot divide by zero");
+
+            }
+            finally
+            {
+                Console.WriteLine("Done");
+            }
+            #endregion
+
+
 
 
 
