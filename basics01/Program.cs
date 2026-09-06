@@ -44,6 +44,24 @@
             {
                 Console.WriteLine("Done");
             }
+
+
+            #endregion
+
+
+
+
+            #region Declare an int pages = 300; then store it in a double variable without using a cast. 
+
+            // 1. Declare int pages
+            int pages = 300;
+
+            // 2. Store it in a double variable (implicit)
+            double doublePages = pages;
+
+            // print
+            Console.WriteLine(doublePages); 
+
             #endregion
 
 
