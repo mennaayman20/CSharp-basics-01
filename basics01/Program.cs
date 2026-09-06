@@ -60,9 +60,23 @@
             double doublePages = pages;
 
             // print
-            Console.WriteLine(doublePages); 
+            Console.WriteLine(doublePages);
 
             #endregion
+
+
+
+
+            #region Declare a double price = 49.99; then convert it into an int using a cast. 
+
+            double price = 49.99;
+            // Explicit casting
+            int intPrice = (int)price;
+            // print
+            Console.WriteLine(intPrice);
+
+            #endregion
+
 
 
 
